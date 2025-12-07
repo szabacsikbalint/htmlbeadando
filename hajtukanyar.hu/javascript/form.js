@@ -75,8 +75,9 @@ form.addEventListener('submit', function(event) {
 
     if (helyesValaszokSzama > 0) {
         alert(`Köszönjük, hogy résztveszel játékunkban! Helyes válaszok száma: ${helyesValaszokSzama} / ${osszesKerdes}.`);
-        form.submit(); 
+        form.reset();
     } else {
         alert(`Köszönjük, hogy résztveszel játékunkban. Sajnos ez most nem sikerült.`);
     }
+
 });
