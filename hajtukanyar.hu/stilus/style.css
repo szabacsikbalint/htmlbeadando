@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Science Gothic", Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #FFD700;
+}
+
+header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: solid 2px red;
+}
+
+header img{
+    height: 40px;
+}
+
+header button{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+.menu-kapcsolo {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar {
+    background-color: black;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.navbar.active {
+    display: flex;
+}
+
+.jobb-oldalsav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.szlogen{
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
+
+.cikk-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.cikk-kartya {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+    text-align: center;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.5);
+}
+
+.kartya-tartalom {
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.cikk-kartya h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cikk-kartya p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.tovabb-gomb {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.tovabb-gomb a{
+    text-decoration: none;
+    color: black;
+}
+
+.tovabb-gomb:hover {
+    background-color: rgb(221, 201, 162);
+}
+
+
+.nyeremeny-doboz {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.5);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 400px;
+}
+
+.nyeremeny-ikon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.nyeremeny-szoveg h3 {
+    color: #FFD700;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.nyeremeny-szoveg p {
+    color: #ddd;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.jatekos-gomb {
+    background-color: #FFD700;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.jatekos-gomb:hover {
+    background-color: #ffed4a;
+}
+
+
+.tabella {
+    background-color: #1a1a1a;
+    margin: 0 20px 10px 20px;
+    border-radius: 15px;
+    padding: 40px 20px 20px 20px;
+    box-shadow: 0 5px 10px 5px  rgba(0,0,0,0.5);
+    border: 1px solid #333;
+    height: 400px;
+}
+
+.tabella-cim {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+}
+
+.tabella table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabella td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #333;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.tabella tr:last-child td {
+    border-bottom: none;
+}
+
+.pontszam {
+    text-align: right;
+    font-weight: bold;
+    color: #FFD700;
+    white-space: nowrap;
+}
+
+.tabella tr:hover {
+    background-color: #2a2a2a;
+}
+
+
+.kovetkezo-futam {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+    margin: 20px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.kovetkezo-alcim {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+}
+
+
+.flag-ikon {
+    width: 60px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.kovetkezo-adatok h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    
+    border-bottom: 2px solid red; 
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.kovetkezo-adatok p {
+    font-size: 1.2rem;
+    color: #FFD700;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.kapszula {
+    background-color: #1a1a1a;
+    color: white;
+    margin: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #333;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.5);
+}
+
+.cikk-fejlec {
+    padding: 60px 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid red;
+}
+
+.oldalcim {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #FFD700;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.bevezeto-szoveg {
+    font-size: 18px;
+    color: #eee;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alcikk {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.alcikk img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 250px;
+}
+
+.szoveg-doboz h3 {
+    font-size: 24px;
+    color: #FFD700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.szoveg-doboz p, .szoveg-doboz li {
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-size: 16px;
+    text-align: justify;
+    list-style: none;
+}
+
+.kiemelt {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tabella2 {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 40px 20px 20px 20px;
+    border: 1px solid #333;
+    width: 100%;
+}
+
+.tabella2 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabella2 td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #333;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.tabella2 tr:last-child td {
+    border-bottom: none;
+}
+
+.jatek-keret{
+    background-color: #1a1a1a;
+    color: white;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid #333;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.5);
+}
+
+.jatek-tartalom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+#valaszok {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.kitoltes{
+    background-color: #333;
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    border-color: #FFD700;
+    font-family: "Science Gothic", Verdana, Geneva, Tahoma, sans-serif;;
+}
+
+.kitoltes:focus{
+    outline: none;
+}
+
+#nyomok{
+    text-align: center;
+}
+
+.kviz-gomb {
+    background-color: #333;
+    color: white;
+    border: 2px solid #FFD700;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.kviz-gomb:hover {
+    background-color: #FFD700;
+    color: black;
+}
+
+.helyes-valasz {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+.hibas-valasz {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+.form-tartalom{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-tartalom h3{
+    font-size: 24px;
+}
+
+.kviz-form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.kviz-form-group p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label{
+    font-size: 18px;
+}
+
+.form-group input, .form-group select{
+    width: 350px;
+}
+
+footer{
+    background-color: black;
+    border-top: solid 2px red;
+    height: 70px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+@media (min-width: 640px) and (max-width: 960px) {    
+    header button {
+        display: none;
+    }
+
+    .navbar { 
+        display: block; 
+        border-bottom: 1px solid #333; 
+    }
+
+    .navbar ul { 
+        flex-direction: row;
+        gap: 20px; 
+        padding: 15px 0;
+        font-size: 16px;
+    }
+
+    .tartalom {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 20px;
+    }
+
+    .cikk-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .cikk-kartya {
+        height: 350px;
+        width: 100%;
+    }
+
+    .jobb-oldalsav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: auto;
+    }
+
+    .nyeremeny-doboz, .tabella, .kovetkezo-futam {
+        height: 350px;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+
+    .nyeremeny-doboz {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .nyeremeny-szoveg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .tabella {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .kovetkezo-futam {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .kapszula {
+        margin: 30px;
+        border-radius: 30px;
+    }
+
+    .cikk-fejlec {
+        height: 400px;
+    }
+
+    .alcikk {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .alcikk img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 15px;
+        order: 0;
+    }
+
+    .szoveg-doboz {
+        width: 90%;
+        text-align: left;
+    }
+    
+    .szoveg-doboz h3 {
+        font-size: 1.8rem;
+    }
+
+    .jatek-keret{
+        margin: 20px;
+    }
+
+    #valaszok {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 960px) {
+    header button {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        border-bottom: 1px solid #333;
+    }
+    .navbar ul {
+        flex-direction: row;
+        gap: 40px;
+        padding: 15px 0;
+    }
+
+    .tartalom {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px 0 0;
+        align-items: start; 
+    }
+
+    .cikk-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .cikk-kartya {
+        width: 100%;
+        height: 450px;
+    }
+
+    .jobb-oldalsav {
+        display: flex;
+        flex-direction: column;
+
+        gap: 40px; 
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .nyeremeny-doboz, .tabella, .kovetkezo-futam {
+        height: 450px;
+        width: 100%;
+        margin: 0;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nyeremeny-doboz {
+        padding: 20px;
+        gap: 15px;
+    }
+    .nyeremeny-szoveg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .tabella {
+        align-items: stretch; 
+        padding: 20px 30px;
+    }
+    .tabella-cim {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .kovetkezo-futam {
+        gap: 20px;
+    }
+    .kovetkezo-adatok {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .kovetkezo-adatok h3 {
+        text-align: center;
+    }
+
+    .kapszula {
+        max-width: 1200px;
+        margin: 50px auto;
+    }
+
+    .alcikk {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .alcikk img {
+        width: 45%;
+        object-fit: cover;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .szoveg-doboz {
+        width: 50%;
+    }
+
+    .alcikk:nth-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .alcikk:nth-of-type(even) {
+        flex-direction: row;
+    }
+
+    .jatek-keret{
+        width: 100%;
+        max-width: 1160px;
+        margin: 20px auto 40px auto;
+    }
+
+    #valaszok {
+        grid-template-columns: 1fr 1fr;
+    }
+}

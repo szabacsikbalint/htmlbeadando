@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weboldal a Forma-1 világáról, történelméről éa jövőjéről">
+    <meta name="author" content="Szabácsik Bálint">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="képek/logo.png">
+    <link rel="stylesheet" href="stilus/style.css">
+    <script src="javascript/form.js" defer></script>
+    <script src="javascript/script.js" defer></script>
+    <title>Hajtűkanyar.hu | Minden, ami Forma-1</title>
+</head>
+<body>
+    <header>
+        <button class="menu-kapcsolo">☰</button>
+        <a href="main.html"><img src="képek/logo_hosszu.png" alt="Hajtűkanyar"></a>
+    </header>
+    <main>
+        <nav class="navbar">
+            <ul>
+                <li><a href="2026.html">A jövő évről</a></li>
+                <li><a href="legends.html">Az F1 legendái</a></li>
+                <li><a href="#">Nyerj F1 belépőt!</a></li>
+                <li><a href="history.html">Az F1 története</a></li>
+                <li><a href="2025.html">Az idei évről</a></li>
+            </ul>
+        </nav>
+        <div class="kapszula">
+            <div class="cikk-fejlec">
+                <h1 class="oldalcim">F1 Nyereményjáték</h1>
+                <p class="bevezeto-szoveg">Válaszolj helyesen az alábbi kérdések közül legalább egyre, és nyerj belépőt a jövő évi Magyar nagydíjra! Minél több
+                    kérdésre jól válaszolsz, annál nagyobb esélyed lesz a győzelemre.
+                </p>
+            </div>
+            <form action="#" method="POST" class="form-tartalom">
+                <h3>Kvízkérdések</h3>
+
+                <div class="kviz-form-group">
+                    <p class="">1. Hány világbajnoki címe van Michael Schumachernek?</p>
+                    <label class="radio-opcio"><input type="radio" name="q1" value="5"> 5</label>
+                    <label class="radio-opcio"><input type="radio" name="q1" value="7"> 7</label>
+                    <label class="radio-opcio"><input type="radio" name="q1" value="8"> 8</label>
+                </div>
+
+                <div class="kviz-form-group">
+                    <p class="kerdes-cim">2. Melyik évben rendezték az első Magyar Nagydíjat?</p>
+                    <label><input type="number" name="q2" min="1950" max="2025" class="kitoltes"></label>
+                </div>
+
+                <div class="kviz-form-group">
+                    <p class="kerdes-cim">3. Melyik csapatot hívják "Ezüst Nyilaknak"?</p>
+                    <label class="radio-opcio"><input type="radio" name="q3" value="mclaren"> McLaren</label>
+                    <label class="radio-opcio"><input type="radio" name="q3" value="mercedes"> Mercedes</label>
+                    <label class="radio-opcio"><input type="radio" name="q3" value="astonmartin"> Aston Martin</label>
+                </div>
+
+                <div class="kviz-form-group">
+                    <p class="kerdes-cim">4. Mit jelent a DRS rövidítés?</p>
+                    <label class="radio-opcio"><input type="radio" name="q4" value="drag"> Drag Reduction System</label>
+                    <label class="radio-opcio"><input type="radio" name="q4" value="downforce"> Downforce Racing System</label>
+                    <label class="radio-opcio"><input type="radio" name="q4" value="driver"> Driver Radio Signal</label>
+                </div>
+
+                <div class="kviz-form-group">
+                    <p class="kerdes-cim">5. Ki a legfiatalabb futamgyőztes az F1 történetében?</p>
+                    <label class="radio-opcio"><input type="radio" name="q5" value="vettel"> Sebastian Vettel</label>
+                    <label class="radio-opcio"><input type="radio" name="q5" value="verstappen"> Max Verstappen</label>
+                    <label class="radio-opcio"><input type="radio" name="q5" value="alonso"> Fernando Alonso</label>
+                </div>
+                
+                <h3>Személyes adatok</h3>
+                
+                <div class="form-group">
+                    <label for="nev">Teljes név:</label>
+                    <input type="text" id="nev" name="nev" class="kitoltes" placeholder="Pl. Kiss László" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email cím:</label>
+                    <input type="email" id="email" name="email" class="kitoltes" placeholder="pelda@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="datum">Születési dátum:</label>
+                    <input type="date" id="datum" name="datum" class="kitoltes" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="csapat">Melyik a kedvenc csapatod?</label>
+                    <select id="csapat" name="csapat" class="kitoltes">
+                        <option value="" disabled selected>Válassz egy istállót...</option>
+                        <option value="ferrari">Scuderia Ferrari</option>
+                        <option value="redbull">Red Bull Racing</option>
+                        <option value="mclaren">McLaren</option>
+                        <option value="mercedes">Mercedes-AMG</option>
+                        <option value="astonmartin">Aston Martin</option>
+                        <option value="williams">Williams</option>
+                        <option value="haas">Haas</option>
+                        <option value="alpine">Alpine</option>
+                        <option value="sauber">Kick Sauber</option>
+                        <option value="rb">Racing Bulls</option>
+                    </select>
+                </div>
+
+                <div class="checkbox-group">
+                    <label class="checkbox-opcio">
+                        <input type="checkbox" required>
+                        Elfogadom a Játékszabályzatot.
+                    </label>
+                </div>
+
+                <button type="submit" class="jatekos-gomb">
+                    Jelentkezem a játékra
+                </button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>© Hajtűkanyar.hu — Minden jog fenntartva</p>
+    </footer>
+</body>
+</html>

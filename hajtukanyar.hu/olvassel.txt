@@ -1,0 +1,70 @@
+A weboldal készítője: Szabácsik Bálint
+A weboldal linkje: https://szabacsikbalint.github.io/htmlbeadando/hajtukanyar.hu/main.html
+
+A weboldal témája: Minden, ami Forma-1. Az oldal foglalkozik a sport múltjával (történelme, legendái), jelenével (az idei világbajnokság) és jövőével (a jövő évi bajnokság).
+
+JavaScript kódok működése:
+
+script.js: A kód lehetővé teszi, hogy mobilnézetben ne maga a navigációs sáv látszódjon, helyette a fejlécben egy kapcsoló helyezkedjen el. Amikor a felhasználó rákkatint a gombra, a navigációs sáv alatta megjelenik, ha pedig újból rákattint, akkor eltűnik.
+
+tipp.js: Ez egy egyszerű tippelős játék kódja, amely a kezdőlap alján helyezkedik el. A felhasználó egy adott pilóta néhány adatát megkapja nyomként és a feladata, hogy a kapott információk alapján kitalálja a kapott választási lehetőségek közül. A szkript alapja egy lista, amely tárolja a versenyzők nevét és statisztikáit. A játék indításakor a program véletlenszerűen kiválaszt egy pilótát, akinek a statisztikáit "nyomokként" kiírja a képernyőre. Ezt követően a kód generál négy válaszlehetőséget: hozzáadja a helyes választ, sorsol mellé három másik eltérő pilótát, majd ezeket a gombokat véletlenszerű sorrendben jeleníti meg a felületen. A felhasználó interakcióját a tippEllenorzes függvény kezeli: kattintáskor összehasonlítja a választott nevet a helyes megfejtéssel, majd azonnali visszajelzést ad (zöldre színezi a jó gombot, pirosra a rosszat), és szövegesen is kiírja az eredményt. A kör végén a program letiltja a további kattintásokat a biztonság kedvéért, majd egy időzítő segítségével 2,5 másodperc múlva automatikusan új kört indít, biztosítva a folyamatos játékmenetet.
+
+form.js: A nyereményjáték űrlapjának validálására szolgál. Az űrlap beküldésekor először validálja a játékos személyes adatait (például, hogy valóban teljes nevet használt, az illető betöltötte-e már a 18 évet), majd a hibátlan adatbevitel után automatikusan kiértékeli az öt F1-es kvízkérdésre adott válaszokat, és kizárólag legalább egy helyes találat elérése esetén engedélyezi a jelentkezés véglegesítését. Válaszul az oldal egy felugró üzenetben tudja meg, hogy sikerült-e a jelentkezés és hogy hány helyes választ adott le.
+
+Használt fonttípus: 'Science Gothic' https://fonts.google.com/specimen/Science+Gothic?query=science
+
+
+
+Az oldal tartalmának forrása
+
+2025.html:
+https://f1.fandom.com/wiki/2025_Formula_One_Season
+https://x.com/F1/status/766613795594731520
+https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8035x5357+0+0/resize/1100/quality/50/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F54%2Fa5%2F5c306986453392f7650b3abc0b88%2Fap25341528135603.jpg
+https://www.formulaonehistory.com/wp-content/uploads/2025/02/Williams-FW47.webp
+https://www.racefans.net/wp-content/uploads/2025/11/racefansdotnet-24-11-09-14-03-01-4-2245857138.jpg
+https://www.racefans.net/wp-content/uploads/2025/10/racefansdotnet-24-10-18-12-04-06-5-2241830289.jpg
+https://cdn.racingnews365.com/2025/Piastri/_1092x683_crop_center-center_85_none/XPB_1368602_HiRes.jpg?v=1756651371
+https://media.formula1.com/image/upload/t_16by9Centre/f_auto/q_auto/v1753718588/fom-website/2025/Hungary/GettyImages-2162296174.jpg
+https://cdni.autocarindia.com/ExtraImages/20250707123444_f1_british_gp_podium.jpg
+https://www.motorsportweek.com/wp-content/uploads/2025/06/Oscar-Piastri-Lando-Norris-McLaren-Canada-2025-F1.webp
+https://motorsportmagazine.b-cdn.net/database/wp-content/uploads/sites/2/2025/05/Max-Verstappen-takes-the-lead-of-the-2025-F1-Emilia-Romagna-Grnad-Prix-from-Oscar-Piastei-at-Imola.jpg
+https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2025/04/06071437/red-bull-max-verstappen-2025-japanese-grand-prix3.jpg
+https://www.motorsportweek.com/wp-content/uploads/2025/03/Aus-GP-race-start.webp
+https://media.formula1.com/image/upload/t_16by9Centre/c_lfill,w_3392/q_auto/v1740000000/fom-website/2025/Ferrari/Ferrari%20SF-25%20launch%20renders/F677_still_02_v11_169.webp
+https://motorsportmagazine.b-cdn.net/wp-content/uploads/2025/02/2025-F1-drivers-photoshoot.jpg
+
+2026.html:
+https://m4sport.hu/forma-1/cikk/2024/06/06/bemutattak-a-jovot-ilyen-lesz-a-forma-1-uj-2026-os-autoja/
+https://www.formula1.com/en/latest/article/fia-unveils-formula-1-regulations-for-2026-and-beyond-featuring-more-agile.75qJiYOHXgeJqsVQtDr2UB
+https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/fom-website/2024/2026%20regulations/3.webp
+https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/fom-website/2024/2026%20regulations/8.webp
+https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/fom-website/2024/2026%20regulations/1.webp
+https://cdn.racingnews365.com/_1456x910_crop_center-center_65_none/8739277/FlzbSRNWQAwKOFT.webp?v=1709138271
+
+legends.html:
+https://f1.fandom.com/wiki/Michael_Schumacher
+https://www.formula1.com/en/information/drivers-hall-of-fame-michael-schumacher.7KdX5nJlTG55vR5JQSbZ21
+https://www.formula1.com/en/information/drivers-hall-of-fame-lewis-hamilton.6TbSwzJA2miTUwtnXUHkjk
+https://f1.fandom.com/wiki/Lewis_Hamilton
+https://www.formula1.com/en/information/drivers-hall-of-fame-juan-manuel-fangio.6SSng3B5E6j6pxPNbyqQIv
+https://f1.fandom.com/wiki/Juan_Manuel_Fangio
+https://f1.fandom.com/wiki/Sebastian_Vettel
+https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5
+https://f1.fandom.com/wiki/Max_Verstappen
+https://www.formula1.com/en/information/drivers-hall-of-fame-max-verstappen.2DttvntAuFvHYrBY2tV8fN
+
+history.html:
+https://www.lookers.co.uk/blog/formula-1-through-the-years?srsltid=AfmBOooodHJbHlGHlzbNaSBjMYjFyM10iTY-tQVzvzgBztJvYMgE4C7w
+https://www.formula1.com/en/latest/article/f1-first-race-1950-silverstone.2f2zI6BmGT9bnK4vX10paZ
+https://www.goodwood.com/globalassets/.road--racing/race/historic/2021/4-april/list-best-f1-cars-1960s/best-f1-cars-of-the-1960s-1-lotus-25-jim-clark-f1-1963-zandvoort-david-phipps-mi-goodwood-21042021.jpg?rxy=0.5,0.5
+https://www.goodwood.com/globalassets/.road--racing/race/historic/2020/11-november/f1-damien-1970s/f1-1974-nurburgring-emerson-fittipaldi-mclaren-m23-mi-goodwood-17112020.jpg?rxy=0.5,0.5
+https://www.goodwood.com/globalassets/.road--racing/race/historic/2021/3-march/list-best-f1-cars-1990s/best-1990s-f1-cars-4-mclaren-mp4_6-ayrton-senna-f1-1991-silverstone-ercole-colombo-mi-goodwood-16032021.jpg?rxy=0.5,0.5
+https://www.goodwood.com/globalassets/.road--racing/race/historic/2021/3-march/list-best-f1-cars-2000s/best-f1-cars-of-the-2000s-3-ferrari-f1-2000-f1-2000-malaysia-michael-schumacher-rubens-barrichello-mi-goodwood-10032021.jpg?rxy=0.5,0.5
+https://media.cnn.com/api/v1/images/stellar/prod/140128120905-mercedes-hamilton-test-2014.jpg?q=w_3570,h_2380,x_0,y_0,c_fill
+https://motorsportmagazine.b-cdn.net/wp-content/uploads/2023/04/2023-Australian-GP-Red-Bull-Max-Verstappen.jpg
+
+main.html:
+https://www.goodwood.com/grr/f1/the-history-of-f1-the-1980s/
+https://www.skysports.com/f1/news/12040/13464336/f1-2025-lando-norris-oscar-piastri-max-verstappen-title-battle-questions-answered-by-sky-sports-f1s-anthony-davidson
+https://images.emojiterra.com/twitter/v13.1/512px/1f1e6-1f1fa.png

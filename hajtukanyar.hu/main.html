@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weboldal a Forma-1 világáról, történelméről éa jövőjéről">
+    <meta name="author" content="Szabácsik Bálint">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="képek/logo.png">
+    <link rel="stylesheet" href="stilus/style.css">
+    <script src="javascript/tipp.js" defer></script>
+    <script src="javascript/script.js" defer></script>
+    <title>Hajtűkanyar.hu | Minden, ami Forma-1</title>
+</head>
+<body>
+    <header>
+        <button class="menu-kapcsolo">☰</button>
+        <a href="#"><img src="képek/logo_hosszu.png" alt="Hajtűkanyar"></a>
+    </header>
+    <main>
+        <nav class="navbar">
+            <ul>
+                <li><a href="2026.html">A jövő évről</a></li>
+                <li><a href="legends.html">Az F1 legendái</a></li>
+                <li><a href="game.html">Nyerj F1 belépőt!</a></li>
+                <li><a href="history.html">Az F1 története</a></li>
+                <li><a href="2025.html">Az idei évről</a></li>
+            </ul>
+        </nav>
+        <div class="szlogen"><h1>Minden, ami Forma-1</h1></div>
+        <div class="tartalom">
+            <div class="bal-oszlop">
+                <article>
+                    <div  class="cikk-grid">
+                        <div class="cikk-kartya" style="background-image: url(képek/car2026.avif);">
+                            <div class="kartya-tartalom">
+                                <h2>A 2026-os szezonról</h2>
+                                <p>Új autók, új szabályok és egy teljesen új csapat</p>
+                                <div class="tovabb-gomb"><a href="2026.html">Tovább</a></div>
+                            </div>
+                        </div>
+                        <div class="cikk-kartya" style="background-image: url(képek/legends.png);">
+                            <div class="kartya-tartalom">
+                                <h2>Az F1 legendáiról</h2>
+                                <p>Ismerd meg az F1 történetének 5 legsikeresebb versenyzőjét</p>
+                                <div class="tovabb-gomb"><a href="legends.html">Tovább</a></div>
+                            </div>
+                        </div>
+                        <div class="cikk-kartya" style="background-image: url(képek/history.jpg);">
+                            <div class="kartya-tartalom">
+                                <h2>Az F1 története</h2>
+                                <p>Fedezd fel az F1 elmúlt 75 évének legfontosabb pillanatai</p>
+                                <div class="tovabb-gomb"><a href="history.html">Tovább</a></div>
+                            </div>
+                        </div>
+                        <div class="cikk-kartya" style="background-image: url(képek/2025.jpg);">
+                            <div class="kartya-tartalom">
+                                <h2>Az idei szezonról</h2>
+                                <p>Tekintsünk vissza az év legnagyobb történéseire</p>
+                                <div class="tovabb-gomb"><a href="2025.html">Tovább</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <aside class="jobb-oldalsav">
+                <div class="nyeremeny-doboz">
+                    <div class="nyeremeny-ikon">🏆</div>
+                    <div class="nyeremeny-szoveg">
+                        <h3>Nyerj Hungaroring Belépőt!</h3>
+                        <p>Töltsd ki kvízünket!</p>
+                        <a href="game.html" class="jatekos-gomb">Játszok!</a>
+                    </div>
+                </div>
+                <div class="tabella">
+                    <h3 class="tabella-cim">Egyéni bajnokság</h3>
+                    <table>
+                        <tbody>
+                            <tr><td>1.</td><td>Lando Norris</td><td class="pontszam">423 pont</td></tr>
+                            <tr><td>2.</td><td>Max Verstappen</td><td class="pontszam">421 pont</td></tr>
+                            <tr><td>3.</td><td>Oscar Piastri</td><td class="pontszam">410 pont</td></tr>
+                            <tr><td>4.</td><td>George Russell</td><td class="pontszam">319 pont</td></tr>
+                            <tr><td>5.</td><td>Charles Leclerc</td><td class="pontszam">242 pont</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tabella">
+                    <h3 class="tabella-cim">Konstruktőri bajnokság</h3>
+                    <table>
+                        <tbody>
+                            <tr><td>1.</td><td>McLaren</td><td class="pontszam">833 pont</td></tr>
+                            <tr><td>2.</td><td>Mercedes</td><td class="pontszam">469 pont</td></tr>
+                            <tr><td>3.</td><td>Red Bull Racing</td><td class="pontszam">451 pont</td></tr>
+                            <tr><td>4.</td><td>Ferrari</td><td class="pontszam">398 pont</td></tr>
+                            <tr><td>5.</td><td>Williams</td><td class="pontszam">137 pont</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="kovetkezo-futam">
+                    <div class="kovetkezo-alcim">A következő nagydíj</div>
+                    <img src="képek/ausflag.webp" alt="Ausztrália zászlaja" class="flag-ikon">
+                    <div class="kovetkezo-adatok">
+                        <h3>Ausztrál nagydíj</h3>
+                        <p>2026. március 6-8.</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="jatek-keret">
+            <div class="jatek-tartalom">
+                <div class="kovetkezo-adatok">
+                    <h3>Melyik pilótára igazak az állítások?</h3>
+                </div>
+                <div id="nyomok"></div>
+                <div id="valaszok"></div>
+                <p id="eredmeny" style="font-size: 1.2rem; min-height: 30px;"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© Hajtűkanyar.hu — Minden jog fenntartva</p>
+    </footer>
+</body>
+</html>
