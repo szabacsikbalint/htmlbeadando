@@ -75,12 +75,13 @@ form.addEventListener('submit', function(event) {
 
     if (helyesValaszokSzama > 0) {
         alert(`Köszönjük, hogy résztveszel játékunkban! Helyes válaszok száma: ${helyesValaszokSzama} / ${osszesKerdes}.`);
-        Window.location.href="game.html";
+        Window.location.href="hajtukanyar.hu/game.html";
     } else {
         alert(`Köszönjük, hogy résztveszel játékunkban. Sajnos ez most nem sikerült.`);
     }
 
 });
+
 
 
 
